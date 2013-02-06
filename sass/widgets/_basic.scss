@@ -1,3 +1,37 @@
-p {
-	padding: 10px;
+/* Colors */
+$light-grey : #DDD;
+$box-def-bg : #EEE;
+
+/* default values */
+$def-radius : 5px; 
+
+/* modifiers */
+
+.rounded {
+	@include border-radius($def-radius);
 }
+
+.no-m { 
+	margin : 0!important; /* Kill margins */
+}
+
+.brdr {
+	border: 1px solid $light-grey;
+}
+
+/* components */ 
+
+.box {
+	padding: 10px;
+	background : $box-def-bg;
+}
+
+.box-leaf {
+  padding: 25px;
+  background : #FBE4E4;
+  @include border-corner-radius(top, left, 60px);
+  @include border-corner-radius(top, right, $def-radius);
+  @include border-corner-radius(bottom, left, 10px);
+  @include border-corner-radius(bottom, right, 50px); 
+ }
+

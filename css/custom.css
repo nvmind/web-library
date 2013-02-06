@@ -1,6 +1,49 @@
-/* line 1, ../sass/widgets/_basic.scss */
-p {
+/* Colors */
+/* default values */
+/* modifiers */
+/* line 10, ../sass/widgets/_basic.scss */
+.rounded {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 14, ../sass/widgets/_basic.scss */
+.no-m {
+  margin: 0!important;
+  /* Kill margins */
+}
+
+/* line 18, ../sass/widgets/_basic.scss */
+.brdr {
+  border: 1px solid #dddddd;
+}
+
+/* components */
+/* line 24, ../sass/widgets/_basic.scss */
+.box {
   padding: 10px;
+  background: #eeeeee;
+}
+
+/* line 29, ../sass/widgets/_basic.scss */
+.box-leaf {
+  padding: 25px;
+  background: #FBE4E4;
+  -moz-border-radius-topleft: 60px;
+  -webkit-border-top-left-radius: 60px;
+  border-top-left-radius: 60px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 /* CONTENT
