@@ -1,0 +1,69 @@
+/* CONTENT
+================================================== */
+section {
+  margin: 10px 0;
+}
+
+/* FOOTER
+================================================== */
+footer {
+  background: black;
+  min-height: 50px;
+  margin-top: 30px;
+  padding: 20px 0 10px 0;
+}
+footer h2 {
+  color: white;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 10px 0;
+}
+footer p,
+footer blockquote,
+footer article,
+footer section {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+footer a {
+  color: white;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
+footer a:hover {
+  color: #999999;
+}
+footer a:visited {
+  color: white;
+}
+
+/*  GRID LAYOUT  */
+.layoutGrid [class*="grid-"] p {
+	background: #EDEDED;
+	border: 1px solid #555;
+	font-size: 13px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.layoutGrid p.noStyle {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+
+
+/* ================================================
+    Custom Media Queries
+================================================== */
