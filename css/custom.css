@@ -1,17 +1,25 @@
+/* line 1, ../sass/widgets/_basic.scss */
+p {
+  padding: 10px;
+}
+
 /* CONTENT
 ================================================== */
+/* line 10, ../sass/custom.scss */
 section {
   margin: 10px 0;
 }
 
 /* FOOTER
 ================================================== */
+/* line 16, ../sass/custom.scss */
 footer {
   background: black;
   min-height: 50px;
   margin-top: 30px;
   padding: 20px 0 10px 0;
 }
+/* line 21, ../sass/custom.scss */
 footer h2 {
   color: white;
   display: block;
@@ -21,6 +29,7 @@ footer h2 {
   font-weight: bold;
   margin: 10px 0;
 }
+/* line 27, ../sass/custom.scss */
 footer p,
 footer blockquote,
 footer article,
@@ -30,6 +39,7 @@ footer section {
   font-size: 12px;
   line-height: 1.5;
 }
+/* line 50, ../sass/core/_typography.scss */
 footer a {
   color: white;
   white-space: pre;
@@ -41,28 +51,14 @@ footer a {
   white-space: -hp-pre-wrap;
   word-wrap: break-word;
 }
+/* line 53, ../sass/core/_typography.scss */
 footer a:hover {
   color: #999999;
 }
+/* line 54, ../sass/core/_typography.scss */
 footer a:visited {
   color: white;
 }
-
-/*  GRID LAYOUT  */
-.layoutGrid [class*="grid-"] p {
-	background: #EDEDED;
-	border: 1px solid #555;
-	font-size: 13px;
-	margin-bottom: 20px;
-	padding: 10px;
-}
-.layoutGrid p.noStyle {
-	background: none;
-	border: none;
-	padding: 0;
-}
-
-
 
 /* ================================================
     Custom Media Queries
