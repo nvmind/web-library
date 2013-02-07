@@ -1,9 +1,15 @@
 /* Colors */
 $light-grey : #DDD;
-$box-def-bg : #EEE;
+$box-def-bg : #CCC;
 
 /* default values */
 $def-radius : 5px; 
+
+/* alerts */
+$success-color : #9CBC01;
+$error-color : #BB3732;
+$info-color : #019AE8;
+
 
 /* modifiers */
 
@@ -11,27 +17,55 @@ $def-radius : 5px;
 	@include border-radius($def-radius);
 }
 
-.no-m { 
-	margin : 0!important; /* Kill margins */
-}
-
 .brdr {
 	border: 1px solid $light-grey;
 }
 
-/* components */ 
+/***** components *****/ 
+
+
+
+/* Box */
 
 .box {
-	padding: 10px;
+	padding: 25px;
 	background : $box-def-bg;
 }
 
 .box-leaf {
   padding: 25px;
-  background : #FBE4E4;
+  background : $box-def-bg;
   @include border-corner-radius(top, left, 60px);
   @include border-corner-radius(top, right, $def-radius);
   @include border-corner-radius(bottom, left, 10px);
   @include border-corner-radius(bottom, right, 50px); 
  }
 
+.box img, .box-leaf img {
+  padding: 15px 0 0 0;
+}
+
+/* Alerts */
+
+.alert {
+  margin: 5px 0 5px 0;
+  display: block;
+  padding: 10px 10px;
+  background: $light-grey; 
+  @include border-radius($def-radius);
+  color: white;
+  font-size: 1.3em;
+
+}
+
+.alert-info {
+  background: $info-color;
+}
+
+.alert-error {
+  background: $error-color;
+}
+
+.alert-success {
+  background: $success-color;
+}

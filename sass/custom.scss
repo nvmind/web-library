@@ -1,9 +1,17 @@
 @import "core/base";
 @import "widgets/basic";
 
-nav#main {
-
+html {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.9em;
 }
+
+body {
+ font-size: 1.3em; 
+}
+
+
 
 /* CONTENT
 ================================================== */

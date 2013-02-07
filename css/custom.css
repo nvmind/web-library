@@ -1,7 +1,8 @@
 /* Colors */
 /* default values */
+/* alerts */
 /* modifiers */
-/* line 10, ../sass/widgets/_basic.scss */
+/* line 16, ../sass/widgets/_basic.scss */
 .rounded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -10,28 +11,23 @@
   border-radius: 5px;
 }
 
-/* line 14, ../sass/widgets/_basic.scss */
-.no-m {
-  margin: 0!important;
-  /* Kill margins */
-}
-
-/* line 18, ../sass/widgets/_basic.scss */
+/* line 20, ../sass/widgets/_basic.scss */
 .brdr {
   border: 1px solid #dddddd;
 }
 
-/* components */
-/* line 24, ../sass/widgets/_basic.scss */
+/***** components *****/
+/* Box */
+/* line 30, ../sass/widgets/_basic.scss */
 .box {
-  padding: 10px;
-  background: #eeeeee;
+  padding: 25px;
+  background: #cccccc;
 }
 
-/* line 29, ../sass/widgets/_basic.scss */
+/* line 35, ../sass/widgets/_basic.scss */
 .box-leaf {
   padding: 25px;
-  background: #FBE4E4;
+  background: #cccccc;
   -moz-border-radius-topleft: 60px;
   -webkit-border-top-left-radius: 60px;
   border-top-left-radius: 60px;
@@ -46,23 +42,71 @@
   border-bottom-right-radius: 50px;
 }
 
+/* line 44, ../sass/widgets/_basic.scss */
+.box img, .box-leaf img {
+  padding: 15px 0 0 0;
+}
+
+/* Alerts */
+/* line 50, ../sass/widgets/_basic.scss */
+.alert {
+  margin: 5px 0 5px 0;
+  display: block;
+  padding: 10px 10px;
+  background: #dddddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3em;
+}
+
+/* line 61, ../sass/widgets/_basic.scss */
+.alert-info {
+  background: #019ae8;
+}
+
+/* line 65, ../sass/widgets/_basic.scss */
+.alert-error {
+  background: #bb3732;
+}
+
+/* line 69, ../sass/widgets/_basic.scss */
+.alert-success {
+  background: #9cbc01;
+}
+
+/* line 4, ../sass/custom.scss */
+html {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.9em;
+}
+
+/* line 10, ../sass/custom.scss */
+body {
+  font-size: 1.3em;
+}
+
 /* CONTENT
 ================================================== */
-/* line 10, ../sass/custom.scss */
+/* line 18, ../sass/custom.scss */
 section {
   margin: 10px 0;
 }
 
 /* FOOTER
 ================================================== */
-/* line 16, ../sass/custom.scss */
+/* line 24, ../sass/custom.scss */
 footer {
   background: black;
   min-height: 50px;
   margin-top: 30px;
   padding: 20px 0 10px 0;
 }
-/* line 21, ../sass/custom.scss */
+/* line 29, ../sass/custom.scss */
 footer h2 {
   color: white;
   display: block;
@@ -72,7 +116,7 @@ footer h2 {
   font-weight: bold;
   margin: 10px 0;
 }
-/* line 27, ../sass/custom.scss */
+/* line 35, ../sass/custom.scss */
 footer p,
 footer blockquote,
 footer article,
