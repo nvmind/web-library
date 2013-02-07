@@ -84,6 +84,9 @@ $line-height: 1.5;
 }
 
 
+
+
+
 @mixin typography($color: $text-color) {
   h1 {
     @include heading($h1-size, 10px, $color);
@@ -102,6 +105,7 @@ $line-height: 1.5;
   article,
   section {
     @include text($color);
+    font-family: $text-font;
   }
   @include links;
   @include default-list;

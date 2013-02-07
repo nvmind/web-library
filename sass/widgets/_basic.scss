@@ -105,6 +105,10 @@ nav.nav-v li:hover, nav.nav-v li.active {
 	background : $box-def-bg;
 }
 
+.box h2 {
+  
+}
+
 .box-leaf {
   padding: 25px;
   background : $box-def-bg;
@@ -126,9 +130,9 @@ nav.nav-v li:hover, nav.nav-v li.active {
   padding: 10px 10px;
   background: $light-grey; 
   @extend .rounded;
-  color: white;
-  font-size: 1.3em;
+  @include text(white);
 
+  font-weight: bold;
 }
 
 .alert-info {
