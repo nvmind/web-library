@@ -1,5 +1,6 @@
 /* Colors */
 $light-grey : #DDD;
+$normal-grey : #AAA;
 $box-def-bg : #CCC;
 
 /* default values */
@@ -21,7 +22,79 @@ $info-color : #019AE8;
 	border: 1px solid $light-grey;
 }
 
-/***** components *****/ 
+.fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/***** Components *****/ 
+
+/* nav */
+
+nav ul {
+  width: 100%;
+}
+
+/* Horiz nav */
+
+nav.nav-h {
+  background: $light-grey;
+}
+
+nav.nav-h ul li a {
+  
+}
+
+nav.nav-h ul li.active a {
+  background: $normal-grey;
+}
+
+/* pills */
+
+nav.nav-h-pills {
+  border: 0;
+
+}
+
+nav.nav-h-pills li {
+  padding: 5px;
+}
+
+nav.nav-h-pills li a {
+  padding: 5px;
+  @extend .rounded;
+}
+
+nav.nav-h-pills li.active a, nav.nav-h-pills li:hover a  {
+  background: $normal-grey;
+}
+
+
+/* Vertical nav */
+
+nav.nav-v {
+
+}
+
+nav.nav-v li {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+nav.nav-v li a {
+  padding: 8px 0 8px 8px;
+  width: 100%;
+}
+
+nav.nav-v li a:hover, nav.nav-v li.active a {
+  background: none;
+}
+
+nav.nav-v li:hover, nav.nav-v li.active {
+  background: $normal-grey;
+}
 
 
 
@@ -52,7 +125,7 @@ $info-color : #019AE8;
   display: block;
   padding: 10px 10px;
   background: $light-grey; 
-  @include border-radius($def-radius);
+  @extend .rounded;
   color: white;
   font-size: 1.3em;
 

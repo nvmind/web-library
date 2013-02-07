@@ -25,8 +25,9 @@
        filter: none;
     }
   </style>
-<![endif]--><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.url.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -34,13 +35,38 @@
 <body>
      <br/>
      <div class="container">
+      <div class="grid-12">
+        <nav class="nav-h mobile">
+          <span class="openMenu hide-desktop">Open</span>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li class="active"><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-h-pills rounded">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li class="active"><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="grid-4">
-        <div class="box">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit inventore rem iusto labore maxime totam amet quidem officia error odio nemo aperiam laborum architecto unde ut quisquam voluptate magnam dolorem.
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore natus eligendi aut voluptas molestiae sapiente enim? Consectetur quidem omnis nam accusamus necessitatibus in qui labore excepturi ex pariatur laborum animi.
-
-        </div>
+        <nav class="nav-v">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li class="active"><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="grid-4 ">
         <div class="box brdr rounded">
@@ -62,7 +88,8 @@
         <div class="box">
            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit inventore rem iusto labore maxime totam amet quidem officia error odio nemo aperiam laborum architecto unde ut quisquam voluptate magnam dolorem.
            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit inventore rem iusto labore maxime totam amet quidem officia error odio nemo aperiam laborum architecto unde ut quisquam voluptate magnam dolorem.
-           <img src="holder.js/200x200/social" alt="placeholder" />
+           <img src="holder.js/200x200/auto" class="fluid" alt="placeholder" />
+            <div class="clear"></div>
         </div>
       </div>
       <div class="grid-8">
@@ -72,14 +99,25 @@
            <div class="alert alert-info">Hello this is an alert message!!</div>
            <div class="alert alert-success grid-6 alpha">Hello this is an alert message!!</div>
            <div class="alert alert-error grid-4 alpha">Hello this is an alert message!!</div>
-           <div class="clear"></div>
+          
+
+            <div class="clear"></div>
         </div>
       </div>
+      <div class="clear"></div>
+
+      <br/>
+ 
 
     </div>
-    <script type="text/javascript" src="js/jquery.url.js"></script>
+ 
     <script type="text/javascript" src="js/scripts.js"></script>
     <script src="js/vendor/holder.js"></script>
 
 </body>
 </html>
+
+
+
+
+

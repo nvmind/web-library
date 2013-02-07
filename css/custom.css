@@ -2,8 +2,8 @@
 /* default values */
 /* alerts */
 /* modifiers */
-/* line 16, ../sass/widgets/_basic.scss */
-.rounded {
+/* line 17, ../sass/widgets/_basic.scss */
+.rounded, nav.nav-h-pills li a, .alert {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -11,20 +11,89 @@
   border-radius: 5px;
 }
 
-/* line 20, ../sass/widgets/_basic.scss */
+/* line 21, ../sass/widgets/_basic.scss */
 .brdr {
   border: 1px solid #dddddd;
 }
 
-/***** components *****/
+/* line 25, ../sass/widgets/_basic.scss */
+.fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/***** Components *****/
+/* nav */
+/* line 35, ../sass/widgets/_basic.scss */
+nav ul {
+  width: 100%;
+}
+
+/* Horiz nav */
+/* line 41, ../sass/widgets/_basic.scss */
+nav.nav-h {
+  background: #dddddd;
+}
+
+/* line 49, ../sass/widgets/_basic.scss */
+nav.nav-h ul li.active a {
+  background: #aaaaaa;
+}
+
+/* pills */
+/* line 55, ../sass/widgets/_basic.scss */
+nav.nav-h-pills {
+  border: 0;
+}
+
+/* line 60, ../sass/widgets/_basic.scss */
+nav.nav-h-pills li {
+  padding: 5px;
+}
+
+/* line 64, ../sass/widgets/_basic.scss */
+nav.nav-h-pills li a {
+  padding: 5px;
+}
+
+/* line 69, ../sass/widgets/_basic.scss */
+nav.nav-h-pills li.active a, nav.nav-h-pills li:hover a {
+  background: #aaaaaa;
+}
+
+/* Vertical nav */
+/* line 80, ../sass/widgets/_basic.scss */
+nav.nav-v li {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 86, ../sass/widgets/_basic.scss */
+nav.nav-v li a {
+  padding: 8px 0 8px 8px;
+  width: 100%;
+}
+
+/* line 91, ../sass/widgets/_basic.scss */
+nav.nav-v li a:hover, nav.nav-v li.active a {
+  background: none;
+}
+
+/* line 95, ../sass/widgets/_basic.scss */
+nav.nav-v li:hover, nav.nav-v li.active {
+  background: #aaaaaa;
+}
+
 /* Box */
-/* line 30, ../sass/widgets/_basic.scss */
+/* line 103, ../sass/widgets/_basic.scss */
 .box {
   padding: 25px;
   background: #cccccc;
 }
 
-/* line 35, ../sass/widgets/_basic.scss */
+/* line 108, ../sass/widgets/_basic.scss */
 .box-leaf {
   padding: 25px;
   background: #cccccc;
@@ -42,71 +111,72 @@
   border-bottom-right-radius: 50px;
 }
 
-/* line 44, ../sass/widgets/_basic.scss */
+/* line 117, ../sass/widgets/_basic.scss */
 .box img, .box-leaf img {
   padding: 15px 0 0 0;
 }
 
 /* Alerts */
-/* line 50, ../sass/widgets/_basic.scss */
+/* line 123, ../sass/widgets/_basic.scss */
 .alert {
   margin: 5px 0 5px 0;
   display: block;
   padding: 10px 10px;
   background: #dddddd;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
   color: white;
   font-size: 1.3em;
 }
 
-/* line 61, ../sass/widgets/_basic.scss */
+/* line 134, ../sass/widgets/_basic.scss */
 .alert-info {
   background: #019ae8;
 }
 
-/* line 65, ../sass/widgets/_basic.scss */
+/* line 138, ../sass/widgets/_basic.scss */
 .alert-error {
   background: #bb3732;
 }
 
-/* line 69, ../sass/widgets/_basic.scss */
+/* line 142, ../sass/widgets/_basic.scss */
 .alert-success {
   background: #9cbc01;
 }
 
-/* line 4, ../sass/custom.scss */
+/* mobile nav */
+/* line 3, ../sass/mobile/_base.scss */
+nav span.openMenu {
+  cursor: pointer;
+}
+
+/* line 5, ../sass/custom.scss */
 html {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 62.5%;
   line-height: 1.9em;
 }
 
-/* line 10, ../sass/custom.scss */
+/* line 11, ../sass/custom.scss */
 body {
   font-size: 1.3em;
 }
 
 /* CONTENT
 ================================================== */
-/* line 18, ../sass/custom.scss */
+/* line 19, ../sass/custom.scss */
 section {
   margin: 10px 0;
 }
 
 /* FOOTER
 ================================================== */
-/* line 24, ../sass/custom.scss */
+/* line 25, ../sass/custom.scss */
 footer {
   background: black;
   min-height: 50px;
   margin-top: 30px;
   padding: 20px 0 10px 0;
 }
-/* line 29, ../sass/custom.scss */
+/* line 30, ../sass/custom.scss */
 footer h2 {
   color: white;
   display: block;
@@ -116,7 +186,7 @@ footer h2 {
   font-weight: bold;
   margin: 10px 0;
 }
-/* line 35, ../sass/custom.scss */
+/* line 36, ../sass/custom.scss */
 footer p,
 footer blockquote,
 footer article,
